@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
+import Footer from "./Footer";
 
 import {
   Sheet,
@@ -90,7 +91,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               </nav>
             </SheetClose>
 
-            FOOTER
+            <Footer user={user} type="mobile"/>
           </div>
         </SheetContent>
       </Sheet>
